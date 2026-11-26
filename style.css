@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    font-size: 14px;
+}
+
+.main-block{
+    max-width: 600px;
+    display: grid;
+    margin: auto;
+    margin-top: 100px;
+    grid-template-columns: 50% 50%;
+    background-color: white;
+}
+
+.photo-block img{
+    max-width: 100%;
+}
+
+.desktop-img{
+    display: block;
+}
+
+
+.text-block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Montserrat";
+    font-weight: 500;
+    color: hsl(212, 21%, 14%);
+    padding: 30px;
+}
+
+.perfume{
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.text-block h1{
+    font-family: "Fraunces";
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+}
+
+.desc{
+    color: hsl(228, 12%, 48%);
+    line-height: 1.3rem;
+}
+
+.prices{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.price-new{
+    color: hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.price-old{
+   color: hsl(228, 12%, 48%);
+   text-decoration: line-through;
+}
+
+
+.btn-add{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 1rem;
+    
+}
+
+.btn-add:hover{
+    background-color: hsl(158, 42%, 18%);
+    cursor: pointer;
+}
+
+.btn-add:focus-visible{
+    background-color: hsl(158, 42%, 18%);
+}
+
+
+.mobile-img{
+    display: none;
+}
+
+
+@media (max-width: 550px){
+    .main-block{
+        grid-template-columns: 100%;
+        margin: 0;
+    }
+    .desktop-img{
+        display: none;
+    }
+    .mobile-img{
+        display: block;
+    }
+    .text-block{
+        gap: 2rem;
+    }
+}
